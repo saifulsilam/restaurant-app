@@ -1,0 +1,589 @@
+/* ************ */
+/* Basic Setup */
+/* ************ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility
+}
+ul li{
+    list-style-type: none;
+}
+/* Reusable Section */
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.clear-fix::after{
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/* Header Section */
+header{
+
+    background: #141414;
+}
+
+.main-nav{
+    margin-left: 7.4rem;
+    
+    overflow: hidden;
+}
+.main-nav li{
+    display: inline-block;
+    margin-top: 0.5rem;
+} 
+.nav li a:link,
+.nav li a:visited{
+    color: rgb(190, 183, 183);
+    font-size: 1.4rem;
+    margin-left: 0.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verlag A;
+    
+}
+.nav li:hover a:link,
+.nav li:hover a:visited{
+    color:#f5e554;
+    font-size: 1.6rem;
+    margin-left: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verlag A;
+   
+}
+
+.nav .nav-btn{
+    background: rgb(151, 71, 71);
+    color: rgb(238, 234, 234);
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.9rem;
+    padding-right: 0.7rem;
+    margin-left: 0.8rem;
+    border-radius: 1rem;
+}
+/* Hero Box */
+.hero-box{
+    background:linear-gradient(#1414148c,#0d0d0e67), url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 85vh;
+    text-align: center;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+.hero-box h2{
+    padding-top: 9rem;
+    color:#e9e8e8;
+    font-size: 5rem;
+    line-height: 5rem;
+    font-family: Sentinel SSm A;
+    font-weight: 3rem;
+    text-transform: uppercase;
+  
+    
+
+}
+.hero-box .description{
+    padding-top: 3rem;
+    color:#e9e8e8;
+    font-size: 2.1rem;
+    font-family: Sentinel SSm A;
+    font-weight:5rem;
+    
+}
+.hero-box h2::after{
+    content: "";
+    display: block;
+    height: 0.2rem;
+    background:#fff;
+    width: 12rem;
+    margin: auto;
+    margin-top: 3rem;
+
+}
+
+.hero-box li{
+    display: inline-block;    
+    margin-top: 3rem;
+   
+} 
+.hero-box li a:link,
+.hero-box li a:visited{
+    background:  rgb(226, 104, 104);
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin-top: 0.8rem;
+    color:#0a0a0a;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+} 
+.hero-box li:hover a:link,
+.hero-box li:hover a:visited{
+    background: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-top: 0.8rem;
+    color:#0a0a0a;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+} 
+
+/* Subscribe */
+.subscribe{
+    background:linear-gradient(#1414148c,#0d0d0e67),  url(../images/subscribe.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height:60vh;
+    position: relative;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 7rem;
+
+    
+}
+.subscribe h2{
+    font-family: Sentinel SSm A;
+    font-size:3rem;
+    font-style: italic;
+    font-weight: 1.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+.subscribe p{
+    font-family: Sentinel SSm A;
+    font-size:2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.subscribe input[type="email"]{
+    width: 20%;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+}
+.subscribe input[type="submit"]{
+    color: #fff;
+    background: #575119;
+    width: 11%;
+    padding: 1rem;
+    margin-left: 0;
+    font-size: 1.7rem;
+}
+
+/* Thanks Giving */
+.thanks-giving{
+    background: linear-gradient(#1b1b1bc2,#1b1b1b9d),url(../images/thanks.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+    height: 65vh;
+    position: relative;
+    text-align: center;
+}
+
+.thanks-giving h2{
+    font-family: Sentinel SSm A;
+    font-size:5.5rem;
+    font-weight: 3rem;
+    color: #fff;
+    padding-top: 14rem;
+    margin-bottom: 3rem;
+    border-radius: 10%;
+
+}
+.thanks-giving p{
+    font-family: Sentinel SSm A;
+    font-size:2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.thanks-giving li a:link,
+.thanks-giving li a:visited{
+    background: #575119;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    color:#fff;;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.6rem;
+   
+} 
+.thanks-giving li:hover a:link,
+.thanks-giving li:hover a:visited{
+    background:  rgb(226, 104, 104);
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    color:black;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.6rem;
+   
+} 
+
+/* Favourite Item section */
+.favourite-item{
+    background: rgba(0, 0, 0, 0.89);
+    height:200vh ;
+}
+.favourite-item .title{
+    padding-top: 20rem;
+     margin-left: 20rem;
+}
+.favourite-item h2{
+  color:#fff;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.favourite-item .fav-items{
+    width: 60%;
+    margin-top: 8rem;
+}
+.favourite-item .fav-item{
+    
+    padding-bottom: 10rem;
+}
+.favourite-item .fav-item h3{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-weight: normal;
+  
+}
+.favourite-item .fav-item p{
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 2.6rem;
+  
+}
+
+
+/* catering services */
+.catering-services{
+    background: linear-gradient(#1b1b1b9d,#1b1b1b4b),url(../images/catering.png);
+    background-repeat: no-repeat;
+    background-position:center right;
+    background-size: cover;
+    height: 55vh;
+    position: relative;
+    text-align: center;
+}
+
+.catering-services h2{
+    font-family: Sentinel SSm A;
+    font-size:5.5rem;
+    font-weight: 2.4rem;
+    color: #fff;
+    padding-top: 8rem;
+     margin-bottom: 1.5rem;
+
+}
+
+.catering-services p{
+    font-family: Sentinel SSm A;
+    font-size:1.8rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.catering-services li a:link,
+.catering-services li a:visited{
+    background: #575119;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    color:#fff;;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+   
+} 
+/* our story secttion */
+.our-story{
+    background: linear-gradient(#1b1b1ba9,#1b1b1ba2),url(../images/ourstory.png);
+    background-repeat: no-repeat;
+    background-position:center bottom;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    text-align: center;
+}
+
+.our-story h2{
+    font-family: Sentinel SSm A;
+    font-size:5.5rem;
+    font-weight: 2.4rem;
+    color: #fff;
+    padding-top: 10rem;
+    margin-bottom: 3rem;
+    letter-spacing: 1.1rem;
+
+}
+.our-story  h2::after{
+    content: "";
+    display: block;
+    height: 0.2rem;
+    background:rgb(109, 107, 107);
+    width:40%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.our-story p{
+    font-family: Sentinel SSm A;
+    font-size:1.9rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.our-story li a:link,
+.our-story li a:visited{
+    background: #575119;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    color:#fff;;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+   
+} 
+
+/* Our beginning  */
+.our-beginning{
+    background: linear-gradient(#14141481,#1414149f),url(../images/begining.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 156vh;
+    position: relative;
+    text-align: center;
+}
+.our-beginning h2{
+    font-family: Sentinel SSm A;
+    font-size:5.5rem;
+    font-weight: 2.4rem;
+    color: #fff;
+    padding-top: 14rem;
+    margin-bottom: 3rem;
+    letter-spacing: 1.1rem;
+}
+.our-beginning p{
+    font-size: 1.7rem;
+    color: #fff;
+    line-height: 2.6rem;
+    text-align: left;
+}
+
+/* Footer */
+.footer{
+    background: linear-gradient(#333333,#141414),url(../images/begining.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+
+}
+.footer .span_1_of_4{
+    padding-top: 5rem;
+}
+.footer-nav{
+    list-style-type: none;
+    text-align: left;
+    padding-left:9rem;
+}
+.footer .span_1_of_4 ul li{
+ list-style-type: none;
+}
+.footer .span_1_of_4 a{
+    font-size: 2.1rem;
+    color: azure;
+    text-transform: uppercase;
+   }
+.footer .span_1_of_4 li a:link,
+.footer .span_1_of_4 li a:visited{
+    color: #cfccb0;
+    font-size: 1.5rem;
+    line-height: 2.9rem;
+    text-align: left;
+}
+.footer h2{
+    font-size: 2rem;
+    color: azure;
+    margin-bottom: 1rem;
+    padding-left: -rem;
+}
+
+.footer .second-row{
+    color: #6b6b6a;
+    font-size: 1.7rem;
+}
+.footer img{
+    width: 16rem;
+    height: 12rem;
+}
+.copyright{
+    background: black;
+    height: 4rem;
+}
+.copyright p{
+   color: blanchedalmond;
+   text-align: left;
+   margin-left: 4rem;
+   font-size: 1.5rem;
+   padding-top: 1rem;
+}
+
+/* Page Section */
+
+/* menu page */
+.menu-breadcum{
+    background:linear-gradient(#c0848455,#1414149b) ,url(../images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    text-align: center;
+}
+
+.menu-breadcum h2{
+    font-size: 4.7rem;
+    text-transform: uppercase;
+   
+    font-family: Sentinel SSm As;
+    color:#fff;
+    padding-top: 8.5rem;
+    padding-bottom: 2rem;
+}
+.menu-breadcum h2::after{
+    content: "";
+    display: block;
+    height: 0.2rem;
+    background:rgb(207, 204, 204);
+    width:20%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.menu-breadcum p{
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 2rem;
+
+}
+.menu-breadcum input[type="submit"]{
+    background: #575119;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    color:#fff;;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+   
+}
+.menus{
+    margin-top: 3rem;
+}
+ .menus h2{
+    color: #141414d3;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+}
+.menus h2::after{
+    content: "";
+    display: block;
+    height: 0.2rem;
+    background:rgb(207, 204, 204);
+    width:60%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+.menus-item h2{
+    color: black;
+    font-size: 2.3rem;
+   text-transform: uppercase;
+ 
+}
+.menus-item h2::after{
+    content: "";
+    display: block;
+    height: 0.1rem;
+    background:rgba(0, 0, 0, 0.356);
+    width:100%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    text-align: left;
+}
+
+.menus-item .title h2{
+    font-size: 2.3rem;
+    color:black ;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+.menu-item{
+    margin-bottom: 1.5rem;
+}
+.menus-item .menu-item h3{
+    font-size: 2rem;
+    color:rgb(15, 15, 15) ;
+    font-weight: 100;
+ 
+    
+}
+.menus-item .menu-item p{
+    font-size: 1.6rem;
+    color:rgb(54, 53, 53) ;
+    font-weight: 100;
+
+}
+.menu-copyright{
+    background: rgb(93, 92, 92);
+    height: 4rem;
+    width: 100%;
+}
+.menu-copyright p{
+   color: blanchedalmond;
+   text-align: left;
+   margin-left: 4rem;
+   font-size: 1.5rem;
+   padding-top: 1rem;
+}

@@ -1,0 +1,121 @@
+/* menu page */
+.menu-breadcum{
+    background:linear-gradient(#c0848455,#1414149b), url(./images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    text-align: center;
+}
+
+.menu-breadcum h2{
+    font-size: 4.7rem;
+    text-transform: uppercase;
+   
+    font-family: Sentinel SSm As;
+    color:#fff;
+    padding-top: 8.5rem;
+    padding-bottom: 2rem;
+}
+.menu-breadcum h2::after{
+    content: "";
+    display: block;
+    height: 0.2rem;
+    background:rgb(207, 204, 204);
+    width:20%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.menu-breadcum p{
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 2rem;
+
+}
+.menu-breadcum input[type="submit"]{
+    background: #575119;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    color:#fff;;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+   
+}
+.menus{
+    margin-top: 3rem;
+}
+ .menus h2{
+    color: #141414d3;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+}
+.menus h2::after{
+    content: "";
+    display: block;
+    height: 0.2rem;
+    background:rgb(207, 204, 204);
+    width:60%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+.menus-item h2{
+    color: black;
+    font-size: 2.3rem;
+   text-transform: uppercase;
+ 
+}
+.menus-item h2::after{
+    content: "";
+    display: block;
+    height: 0.1rem;
+    background:rgba(0, 0, 0, 0.356);
+    width:100%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    text-align: left;
+}
+
+.menus-item .title h2{
+    font-size: 2.3rem;
+    color:black ;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+.menu-item{
+    margin-bottom: 1.5rem;
+}
+.menus-item .menu-item h3{
+    font-size: 2rem;
+    color:rgb(15, 15, 15) ;
+    font-weight: 100;
+ 
+    
+}
+.menus-item .menu-item p{
+    font-size: 1.6rem;
+    color:rgb(54, 53, 53) ;
+    font-weight: 100;
+
+}
+.menu-copyright{
+    background: rgb(93, 92, 92);
+    height: 4rem;
+    width: 100%;
+}
+.menu-copyright p{
+   color: blanchedalmond;
+   text-align: left;
+   margin-left: 4rem;
+   font-size: 1.5rem;
+   padding-top: 1rem;
+}
